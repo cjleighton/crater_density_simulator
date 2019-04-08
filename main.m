@@ -10,7 +10,7 @@ n_arr=[]; % An array that describes the cumulative number of craters at a time, 
 crat_arr=[]; % An array which will contain every crater that impacts the surface, where 'crater' is a used-defined class that can record a crater's relevant properties.
 
 t=0; % The current time.  Each iteration of the while() loop below increases t until it reaches sim_timespan.
-sim_timespan=1E4; % The desired length of our simulation measured in years.
+sim_timespan=1e7; % The desired length of our simulation measured in years.
 while(t<=sim_timespan+1) % Run this loop while we're within the desired range.
     %% Crater generation
     crat=crater_gen(A,c,minD); % Create a crater, crat, which now contains the properties dsecribed in crater.m.
